@@ -57,7 +57,7 @@ const WhyInvestSection = () => {
         </TourItem>
 
         <TourItem
-          name="천곡황금박쥐동굴 (국내 유일 도심 천연동굴)"
+          name="천곡황금박쥐동굴"
           image={`${
             import.meta.env.VITE_BASE
           }images/tourist-spot/CHEONGOK_CAVE.jpg`}
@@ -65,7 +65,7 @@ const WhyInvestSection = () => {
         >
           <TourItemDescription
             title="특징"
-            content="4~5억년 전 생성된 석회암 동굴, 황금박쥐 서식지"
+            content="4~5억년 전 생성된 석회암 동굴, 황금박쥐 서식지, 국내 유일 도심 천연동굴"
           />
           <TourItemDescription
             title="관람구간"
@@ -92,7 +92,7 @@ const WhyInvestSection = () => {
         </TourItem>
 
         <TourItem
-          name="어달해수욕장 (오션뷰 카페 밀집지역)"
+          name="어달해수욕장"
           image={`${
             import.meta.env.VITE_BASE
           }images/tourist-spot/EODAL_BEACH.jpg`}
@@ -113,7 +113,7 @@ const WhyInvestSection = () => {
         </TourItem>
 
         <TourItem
-          name="도째비골 스카이밸리 (2021년 개장)"
+          name="도째비골 스카이밸리"
           image={`${
             import.meta.env.VITE_BASE
           }images/tourist-spot/DOJJAEBIGOL_SKYVALLEY.jpg`}
