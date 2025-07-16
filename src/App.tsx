@@ -1,4 +1,5 @@
 import {
+  GrowthPotentialSection,
   Header,
   HeroSection,
   ROIAnalysisSection,
@@ -11,11 +12,14 @@ const App = () => {
   return (
     <>
       <Header />
-      <HeroSection />
-      <VideoSection />
-      <WhyInvestSection />
-      <TouristStatsSection />
-      <ROIAnalysisSection />
+      <main>
+        <HeroSection />
+        <VideoSection />
+        <WhyInvestSection />
+        <TouristStatsSection />
+        <ROIAnalysisSection />
+        <GrowthPotentialSection />
+      </main>
     </>
   );
 };

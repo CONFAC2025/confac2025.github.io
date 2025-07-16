@@ -1,3 +1,4 @@
+import GrowthPotentialSection from "./GrowthPotentialSection";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import ROIAnalysisSection from "./ROIAnalysisSection";
@@ -6,6 +7,7 @@ import VideoSection from "./VideoSection";
 import WhyInvestSection from "./WhyInvestSection";
 
 export {
+  GrowthPotentialSection,
   Header,
   HeroSection,
   ROIAnalysisSection,
