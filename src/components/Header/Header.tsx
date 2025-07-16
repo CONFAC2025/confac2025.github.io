@@ -5,7 +5,7 @@ const Header = () => {
       role="banner"
       aria-label="동해 다온스테이 헤더"
     >
-      <div className="mx-auto h-[48px] w-full max-w-[1200px] flex items-center text-white">
+      <div className="mx-auto h-[48px] w-full max-w-container flex items-center text-white">
         <a
           className="flex items-center gap-[10px] ml-[16px] pc:ml-[48px]"
           href="/"

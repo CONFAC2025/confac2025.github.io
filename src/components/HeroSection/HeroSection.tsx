@@ -7,7 +7,7 @@ const HeroSection = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto">
+    <div className="w-full max-w-container">
       {/* swiper */}
       <div className="relative w-full h-[313px] pc:h-[510px]">
         <Swiper
@@ -25,7 +25,7 @@ const HeroSection = () => {
           {Array.from({ length: 15 }, (_, i) => (
             <SwiperSlide className="h-full w-full">
               <img
-                src={`/donghae-daonstay/images/image-${i + 1}.jpg`}
+                src={`${import.meta.env.VITE_BASE}images/image-${i + 1}.jpg`}
                 className="object-cover h-full w-full"
               />
             </SwiperSlide>

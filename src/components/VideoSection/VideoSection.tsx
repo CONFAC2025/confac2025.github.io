@@ -15,12 +15,12 @@ const VideoSection = () => {
           width: "100%",
           height: "100%",
           playerVars: {
-            autoplay: 1, //자동재생 O
+            autoplay: 0, //자동재생 x
             rel: 0, //관련 동영상 표시하지 않음
             modestbranding: 1, // 컨트롤 바에 youtube 로고를 표시하지 않음
           },
         }}
-        className="max-w-[1200px] w-full h-full mx-auto"
+        className="max-w-container w-full h-full"
         onEnd={(e) => {
           e.target.stopVideo(0);
         }}

@@ -18,10 +18,20 @@
 
   --color-purple: #5c63f6;
   --color-border-gray: rgba(179, 179, 179, 1);
+  --color-black-10: rgba(26, 26, 26, 1);
 
   --font-nanum-square-neo: "NanumSquareNeo", sans-serif;
+
+  --max-width-container: 1200px;
+}
+
+@layer utilities {
+  .max-w-container {
+    @apply max-w-[var(--max-width-container)] mx-auto;
+  }
 }
 
 body {
   font-family: var(--font-nanum-square-neo);
+  color: var(--color-black-10);
 }
