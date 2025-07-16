@@ -1,6 +1,7 @@
 import {
   Header,
   HeroSection,
+  ROIAnalysisSection,
   TouristStatsSection,
   VideoSection,
   WhyInvestSection,
@@ -14,6 +15,7 @@ const App = () => {
       <VideoSection />
       <WhyInvestSection />
       <TouristStatsSection />
+      <ROIAnalysisSection />
     </>
   );
 };
