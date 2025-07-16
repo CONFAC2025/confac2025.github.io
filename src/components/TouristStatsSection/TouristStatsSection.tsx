@@ -14,7 +14,7 @@ const TouristStatsSection = () => {
             className="flex flex-col items-center gap-[16px] w-full font-light rounded-[12px] bg-white p-[24px] text-center"
           >
             <p className="text-[28px] pc:text-[32px]">{title}</p>
-            <p className="text-[18px] pc:text-[22px]">{description}</p>
+            <p className="text-[16px] pc:text-[18px]">{description}</p>
           </li>
         ))}
       </ul>
