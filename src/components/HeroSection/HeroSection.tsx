@@ -25,7 +25,7 @@ const HeroSection = () => {
           {Array.from({ length: 15 }, (_, i) => (
             <SwiperSlide className="h-full w-full">
               <img
-                src={`/images/image-${i + 1}.jpg`}
+                src={`/donghae-daonstay/images/image-${i + 1}.jpg`}
                 className="object-cover h-full w-full"
               />
             </SwiperSlide>
