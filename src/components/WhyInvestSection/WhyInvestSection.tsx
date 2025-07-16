@@ -2,7 +2,7 @@ import type { PropsWithChildren } from "react";
 
 const WhyInvestSection = () => {
   return (
-    <div className="max-w-container w-full">
+    <div className="max-w-container w-full pb-[32px] pc:pb-[48px]">
       {/* title */}
       <div className="pt-[32px] pc:pt-[48px] px-[16px] mb-[32px] pc:mb-[48px]">
         <h2 className="text-[48px] text-purple hidden pc:block">

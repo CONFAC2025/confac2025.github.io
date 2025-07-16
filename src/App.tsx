@@ -1,6 +1,7 @@
 import {
   Header,
   HeroSection,
+  TouristStatsSection,
   VideoSection,
   WhyInvestSection,
 } from "./components";
@@ -12,6 +13,7 @@ const App = () => {
       <HeroSection />
       <VideoSection />
       <WhyInvestSection />
+      <TouristStatsSection />
     </>
   );
 };
