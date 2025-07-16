@@ -4,7 +4,7 @@ const WhyInvestSection = () => {
   return (
     <div className="max-w-container w-full">
       {/* title */}
-      <div className="pt-[32px] pc:pt-[48px] px-[48px] mb-[32px] pc:mb-[48px]">
+      <div className="pt-[32px] pc:pt-[48px] px-[16px] mb-[32px] pc:mb-[48px]">
         <h2 className="text-[48px] text-purple hidden pc:block">
           왜 여기에 투자해야 하는가?
         </h2>
