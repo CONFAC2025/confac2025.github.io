@@ -35,6 +35,6 @@ export function useRecentApplicants() {
         }));
     },
     staleTime: 0,
-    refetchInterval: 30000, // 30초마다 자동 갱신
+    refetchInterval: 60 * 1000, // 1분마다 자동 갱신
   });
 }

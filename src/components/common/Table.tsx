@@ -8,7 +8,7 @@ const Table = <T extends Record<string, any>>({
   rows,
 }: TableProps<T>) => {
   return (
-    <div className="border-[1px] border-border-light-gray rounded-[12px] overflow-hidden overflow-x-auto">
+    <div className="border-[1px] border-border-light-gray rounded-[12px] overflow-hidden overflow-x-auto shadow-2xl">
       <table className="min-w-full divide-y divide-border-light-gray">
         <thead className="bg-light-purple1 h-[48px]">
           <tr>

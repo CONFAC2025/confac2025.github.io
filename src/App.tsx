@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   ApplicantListSection,
+  FormSection,
   GallerySection,
   GrowthPotentialSection,
   Header,
@@ -39,7 +40,7 @@ const App = () => {
         <GallerySection />
 
         {/* 상담 신청 폼 */}
-        {/* TODO 해야함 */}
+        <FormSection />
 
         {/* 지원자 목록 테이블 */}
         <ApplicantListSection />

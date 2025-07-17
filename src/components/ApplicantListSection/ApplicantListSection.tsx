@@ -11,7 +11,7 @@ const ApplicantListSection = () => {
   const { data = [] } = useRecentApplicants();
 
   return (
-    <div className="max-w-container pb-[32px] pc:pb-[48px] px-[16px] pc:px-[48px] bg-border-light-gray shadow-2xl">
+    <div className="max-w-container pb-[32px] pc:pb-[48px] px-[16px] pc:px-[48px] bg-border-light-gray">
       <h2 className="text-[32px] pc:text-[48px] text-purple mb-[24px]">
         상담 신청자 리스트
       </h2>

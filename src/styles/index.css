@@ -24,6 +24,8 @@
   --color-border-light-gray: rgba(245, 245, 245, 1);
   --color-black-10: rgba(26, 26, 26, 1);
 
+  --color-ground-900: rgba(60, 56, 57, 1)
+
   --font-nanum-square-neo: "NanumSquareNeo", sans-serif;
 
   --max-width-container: 1200px;
