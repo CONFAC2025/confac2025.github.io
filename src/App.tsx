@@ -6,6 +6,7 @@ import {
   GrowthPotentialSection,
   Header,
   HeroSection,
+  ProjectOverviewSection,
   ROIAnalysisSection,
   TouristStatsSection,
   VideoSection,
@@ -44,7 +45,8 @@ const App = () => {
 
         {/* 지원자 목록 테이블 */}
         <ApplicantListSection />
-        {/*  */}
+        {/* 프로젝트 개요 */}
+        <ProjectOverviewSection />
       </main>
       {/* 푸터 영역 */}
     </QueryClientProvider>

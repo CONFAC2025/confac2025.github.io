@@ -4,6 +4,7 @@ import GallerySection from "./GallerySection";
 import GrowthPotentialSection from "./GrowthPotentialSection";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
+import ProjectOverviewSection from "./ProjectOverviewSection";
 import ROIAnalysisSection from "./ROIAnalysisSection";
 import TouristStatsSection from "./TouristStatsSection";
 import VideoSection from "./VideoSection";
@@ -16,6 +17,7 @@ export {
   GrowthPotentialSection,
   Header,
   HeroSection,
+  ProjectOverviewSection,
   ROIAnalysisSection,
   TouristStatsSection,
   VideoSection,

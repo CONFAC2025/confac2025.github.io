@@ -8,14 +8,14 @@ const Table = <T extends Record<string, any>>({
   rows,
 }: TableProps<T>) => {
   return (
-    <div className="border-[1px] border-border-light-gray rounded-[12px] overflow-hidden overflow-x-auto shadow-2xl">
+    <div className="border-[1px] border-border-light-gray rounded-[12px] overflow-hidden overflow-x-auto shadow-lg">
       <table className="min-w-full divide-y divide-border-light-gray">
         <thead className="bg-light-purple1 h-[48px]">
           <tr>
             {columns.map((col) => (
               <th
                 key={String(col.key)}
-                className="px-[24px] py-[15px] text-left text-[16px] font-medium tracking-wider"
+                className="px-[24px] py-[15px] text-left text-[16px] font-[600] tracking-wider"
               >
                 {col.label}
               </th>
@@ -25,12 +25,10 @@ const Table = <T extends Record<string, any>>({
         <tbody className="bg-white divide-y divide-border-light-gray">
           {rows.map((row, idx) => (
             <tr key={idx}>
-              {columns.map((col, idx) => (
+              {columns.map((col) => (
                 <td
                   key={String(col.key)}
-                  className={`px-6 py-4 whitespace-nowrap ${
-                    idx === 0 ? "font-medium" : "font-light"
-                  }`}
+                  className={`px-6 py-4 whitespace-nowrap`}
                 >
                   {String(row[col.key])}
                 </td>

@@ -28,7 +28,6 @@ const FormSection = () => {
 
     try {
       // Google Apps Script Web App으로 POST 요청
-      console.log(formData);
       await fetch(GOOGLE_SHEET_SCRIPT_URL, { method: "POST", body: formData });
 
       reset(); // 입력값 초기화
@@ -39,7 +38,10 @@ const FormSection = () => {
   };
 
   return (
-    <div className="max-w-container py-[32px] pc:py-[48px] px-[16px] pc:px-[140px] bg-border-light-gray flex flex-col pc:flex-row gap-[24px] pc:gap-[10px]">
+    <div
+      id="form-section"
+      className="max-w-container py-[32px] pc:py-[48px] px-[16px] pc:px-[140px] bg-border-light-gray flex flex-col pc:flex-row gap-[24px] pc:gap-[10px]"
+    >
       <div className="flex flex-col gap-[24px] w-full">
         <h2 className="text-[32px] pc:text-[48px] text-purple">상담 신청 폼</h2>
 

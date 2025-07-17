@@ -6,6 +6,13 @@ const HeroSection = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
+  const scrollToForm = () => {
+    const formSection = document.getElementById("form-section");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full max-w-container">
       {/* swiper */}
@@ -42,7 +49,10 @@ const HeroSection = () => {
           </p>
 
           {/* button */}
-          <button className="p-[14px_16px_12px_16px] font-light text-[20px] w-fit border-purple border-[1px] leading-10 bg-white rounded-[4px] text-purple tracking-wider cursor-pointer h-[46px] flex items-center justify-center">
+          <button
+            className="p-[14px_16px_12px_16px] font-light text-[20px] w-fit border-purple border-[1px] leading-10 bg-white rounded-[4px] text-purple tracking-wider cursor-pointer h-[46px] flex items-center justify-center"
+            onClick={scrollToForm}
+          >
             상담 신청하기
           </button>
         </div>
@@ -80,7 +90,10 @@ const HeroSection = () => {
           동해 바다 위 프리미엄 풀빌라 분양
         </p>
 
-        <button className="pt-[14px] pb-[12px] text-[16px] w-full border-purple border-[1px] leading-10 bg-white rounded-[4px] text-purple tracking-wider cursor-pointer h-[46px] flex items-center justify-center">
+        <button
+          className="pt-[14px] pb-[12px] text-[16px] w-full border-purple border-[1px] leading-10 bg-white rounded-[4px] text-purple tracking-wider cursor-pointer h-[46px] flex items-center justify-center"
+          onClick={scrollToForm}
+        >
           상담 신청하기
         </button>
       </div>
