@@ -1,4 +1,5 @@
 import ApplicantListSection from "./ApplicantListSection";
+import Footer from "./Footer";
 import FormSection from "./FormSection";
 import GallerySection from "./GallerySection";
 import GrowthPotentialSection from "./GrowthPotentialSection";
@@ -12,6 +13,7 @@ import WhyInvestSection from "./WhyInvestSection";
 
 export {
   ApplicantListSection,
+  Footer,
   FormSection,
   GallerySection,
   GrowthPotentialSection,
