@@ -1,6 +1,6 @@
 export const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
-export const MAP_CENTER = { lat: 37.548897, lng: 129.087385 };
+export const MAP_CENTER = { lat: 37.47534, lng: 129.111858 };
 
 export const MAP_MARKERS = [
   {
