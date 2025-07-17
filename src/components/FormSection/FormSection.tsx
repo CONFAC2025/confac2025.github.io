@@ -97,7 +97,7 @@ const FormSection = () => {
 
           <button
             type="button"
-            onClick={() => window.open("tel:1811-1854")}
+            onClick={() => (window.location.href = "tel:1811-1854")}
             className="p-[14px_16px_12px_16px] bg-white text-purple border-[1px] border-purple rounded-[4px] leading-4.5 cursor-pointer"
           >
             전화 걸기
