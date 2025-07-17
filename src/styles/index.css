@@ -19,7 +19,9 @@
   --color-purple: #5c63f6;
   --color-light-purple1: rgba(215, 216, 240, 1);
   --color-light-purple2: rgba(92, 99, 246, 0.17);
+
   --color-border-gray: rgba(179, 179, 179, 1);
+  --color-border-light-gray: rgba(245, 245, 245, 1);
   --color-black-10: rgba(26, 26, 26, 1);
 
   --font-nanum-square-neo: "NanumSquareNeo", sans-serif;

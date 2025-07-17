@@ -8,7 +8,7 @@ const Header = () => {
       <div className="mx-auto h-[48px] w-full max-w-container flex items-center text-white">
         <a
           className="flex items-center gap-[10px] ml-[16px] pc:ml-[48px]"
-          href="/"
+          href={`${import.meta.env.VITE_BASE}`}
           aria-label="동해 다온스테이 홈페이지로 이동"
         >
           <span

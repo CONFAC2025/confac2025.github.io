@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GALLERY_IMAGES } from "./constant";
 
@@ -22,7 +21,7 @@ const GallerySection = () => {
           onSlideChange={(swiper) => {
             const index = swiper.realIndex;
             setSelectedIndex(index);
-            thumbsSwiperRef.current?.slideToLoop(index); // ✅ 하단도 스크롤
+            thumbsSwiperRef.current?.slideToLoop(index);
           }}
           loop={true}
           className="rounded-[0px] pc:rounded-[12px] overflow-hidden w-full h-full"
@@ -54,8 +53,8 @@ const GallerySection = () => {
               key={idx}
               className="!w-[103px] pc:!w-[137px] flex-shrink-0"
               onClick={() => {
-                mainSwiperRef.current?.slideToLoop(idx); // ✅ 메인 슬라이드 이동
-                thumbsSwiperRef.current?.slideToLoop(idx); // ✅ 하단도 스크롤 (중복 클릭 보정)
+                mainSwiperRef.current?.slideToLoop(idx);
+                thumbsSwiperRef.current?.slideToLoop(idx);
               }}
             >
               <div className="w-full aspect-square">

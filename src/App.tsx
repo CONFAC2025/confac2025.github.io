@@ -1,4 +1,6 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
+  ApplicantListSection,
   GallerySection,
   GrowthPotentialSection,
   Header,
@@ -9,9 +11,11 @@ import {
   WhyInvestSection,
 } from "./components";
 
+const queryClient = new QueryClient();
+
 const App = () => {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       {/* 헤더 영역 */}
       <Header />
       <main>
@@ -27,14 +31,22 @@ const App = () => {
         <ROIAnalysisSection />
         {/* 향후 성장동력 */}
         <GrowthPotentialSection />
+
         {/* 관광인프라 */}
         {/* TODO 해야함 */}
 
         {/* 다온스테이 갤러리 */}
         <GallerySection />
+
+        {/* 상담 신청 폼 */}
+        {/* TODO 해야함 */}
+
+        {/* 지원자 목록 테이블 */}
+        <ApplicantListSection />
+        {/*  */}
       </main>
       {/* 푸터 영역 */}
-    </>
+    </QueryClientProvider>
   );
 };
 
