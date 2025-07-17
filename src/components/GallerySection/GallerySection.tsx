@@ -1,10 +1,12 @@
-import { useState } from "react";
-import { Thumbs } from "swiper/modules";
+import { useRef, useState } from "react";
+import type { Swiper as SwiperType } from "swiper";
+import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GALLERY_IMAGES } from "./constant";
 
 const GallerySection = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+  const mainSwiperRef = useRef<SwiperType | null>(null);
+  const thumbsSwiperRef = useRef<SwiperType | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
@@ -12,17 +14,17 @@ const GallerySection = () => {
       <h2 className="text-[32px] pc:text-[48px] text-purple px-[16px] pc:px-[48px] mb-[24px]">
         다온스테이 갤러리
       </h2>
+
       {/* 상단 메인 이미지 Swiper */}
       <div className="relative w-full aspect-[390/450] pc:aspect-[1104/600] mb-6 px-0 pc:px-[48px]">
         <Swiper
-          modules={[Thumbs]}
-          loop={true}
-          thumbs={{ swiper: thumbsSwiper }}
+          onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
           onSlideChange={(swiper) => {
             const index = swiper.realIndex;
             setSelectedIndex(index);
-            thumbsSwiper?.slideTo(index);
+            thumbsSwiperRef.current?.slideToLoop(index); // ✅ 하단도 스크롤
           }}
+          loop={true}
           className="rounded-[0px] pc:rounded-[12px] overflow-hidden w-full h-full"
         >
           {GALLERY_IMAGES.map((img, idx) => (
@@ -30,7 +32,7 @@ const GallerySection = () => {
               <img
                 src={img}
                 alt={`main-${idx}`}
-                className="w-full h-full object-fill"
+                className="w-full h-full object-cover"
               />
             </SwiperSlide>
           ))}
@@ -40,8 +42,7 @@ const GallerySection = () => {
       {/* 하단 썸네일 Swiper */}
       <div className="w-full px-[16px] pc:px-[48px]">
         <Swiper
-          modules={[Thumbs]}
-          onSwiper={setThumbsSwiper}
+          onSwiper={(swiper) => (thumbsSwiperRef.current = swiper)}
           watchSlidesProgress
           loop={true}
           slidesPerView="auto"
@@ -52,6 +53,10 @@ const GallerySection = () => {
             <SwiperSlide
               key={idx}
               className="!w-[103px] pc:!w-[137px] flex-shrink-0"
+              onClick={() => {
+                mainSwiperRef.current?.slideToLoop(idx); // ✅ 메인 슬라이드 이동
+                thumbsSwiperRef.current?.slideToLoop(idx); // ✅ 하단도 스크롤 (중복 클릭 보정)
+              }}
             >
               <div className="w-full aspect-square">
                 <img
