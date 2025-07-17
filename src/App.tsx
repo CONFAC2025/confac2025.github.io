@@ -9,6 +9,7 @@ import {
   HeroSection,
   ProjectOverviewSection,
   ROIAnalysisSection,
+  TourInfraMapSection,
   TouristStatsSection,
   VideoSection,
   WhyInvestSection,
@@ -34,8 +35,8 @@ const App = () => {
         <ROIAnalysisSection />
         {/* 향후 성장동력 */}
         <GrowthPotentialSection />
-        {/* 관광인프라 */}
-        {/* TODO 해야함 */}
+        {/* 관광인프라 지도 */}
+        <TourInfraMapSection />
         {/* 다온스테이 갤러리 */}
         <GallerySection />
         {/* 상담 신청 폼 */}
