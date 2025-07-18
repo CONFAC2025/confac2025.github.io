@@ -15,6 +15,7 @@ const Header = () => {
             className="material-symbols-rounded w-[24px] h-[24px]"
             aria-label="홈 아이콘"
             role="img"
+            translate="no"
           >
             family_home
           </span>
