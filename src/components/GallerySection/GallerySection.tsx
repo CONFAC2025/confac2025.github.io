@@ -46,14 +46,16 @@ const GallerySection = () => {
           ))}
         </Swiper>
 
-        {/*  */}
         {/* controller */}
         <button
           className="custom-swiper-prev absolute left-0 pc:left-[48px] top-1/2 -translate-y-1/2 z-10 w-[24px] h-[24px] pc:w-[48px] pc:h-[48px] bg-[rgba(255,255,255,0.6)] flex items-center justify-center rounded-tr-[8px] rounded-br-[8px] cursor-pointer"
           ref={prevRef}
         >
           {/* 왼쪽 화살표 아이콘 또는 텍스트 */}
-          <span className="material-symbols-outlined text-purple w-full !text-[20px] pc:!text-[40px] !font-medium">
+          <span
+            className="material-symbols-outlined text-purple w-full !text-[20px] pc:!text-[40px] !font-medium"
+            translate="no"
+          >
             keyboard_arrow_left
           </span>
         </button>
@@ -63,7 +65,10 @@ const GallerySection = () => {
           ref={nextRef}
         >
           {/* 오른쪽 화살표 아이콘 또는 텍스트 */}
-          <span className="material-symbols-outlined text-purple !text-[20px] pc:!text-[40px] !font-medium">
+          <span
+            className="material-symbols-outlined text-purple !text-[20px] pc:!text-[40px] !font-medium"
+            translate="no"
+          >
             keyboard_arrow_right
           </span>
         </button>
